@@ -11,7 +11,9 @@ public class main {
             System.out.println("How would you describe a " + animal + "? ");
             String description = input.nextLine();
 
-            char letter = animal.charAt(0);
+            input.close(); //close scanner
+
+            char letter = animal.charAt(0);//takes the first character from String animal
             System.out.println("A " + animal + " is " + description);
 
             System.out.println("You will find it under " + letter + " in the dictionary");
